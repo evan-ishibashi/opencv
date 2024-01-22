@@ -15,4 +15,10 @@ cv.imshow('Mask',mask)
 masked = cv.bitwise_and(img,img,mask=mask)
 cv.imshow('Masked Image', masked)
 
+rectangle = cv.rectangle(blank.copy(), (30,30), (370,370), 255, -1)
+
+# weird_shape = cv.bitwise_and(img)
+
+
+
 cv.waitKey(0)
